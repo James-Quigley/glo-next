@@ -9,6 +9,8 @@ Create a serverless Next.js site backed by GitKraken Glo
 1. Either connect now.sh to GitHub, or run the `now` command via CLI
 1. Edit `board_id` in data/glo.js to the id of the public Glo board you want to use
 
+Run locally with `npx now dev`
+
 # Features
 
 * Auto-refresh when the Glo data changes
