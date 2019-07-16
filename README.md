@@ -1,5 +1,5 @@
 # glo-next
-Create a serverless Next.js site backed by GitKraken Glo
+Create a serverless Next.js site backed by a public GitKraken Glo board
 
 ![Gif of example](https://kapture-imwgmxttpp.now.sh/)
 
