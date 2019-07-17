@@ -37,7 +37,7 @@ const getCards = async (column) => {
     while (has_more) {
         const response = await glo.get(`/boards/${board_id}/columns/${column_id}/cards?page=${page}&per_page=1000&fields=board_id%2Carchived_date%2Cboard_id%2Cdue_date%2Cname%2Ccover_image_attachment_id%2Ccolumn_id%2Ccreated_by%2Ccreated_date%2Cmembers%2Clabels%2Cattachment_count%2Ccomment_count%2Ctotal_task_count%2Ccompleted_task_count%2Cdescription%2Cstatus%2Csync_provider_id%2Cupdated_date&sort=archived_date&page=1&per_page=100`)
             .catch(error => console.error(error));
-        has_more = response.headers['has_more'];
+        has_more = response.headers['has-more'] === 'true';
         cards = cards.concat(response.data);
         page++;
     }
